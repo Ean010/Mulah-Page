@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mulah Loyalty</title>
+  <link rel="stylesheet" href="stylo.css">
+</head>
+<body>
+  <h1 class="logo">Mulah</h1>
+  <h1 class="welcome-message">Hello, Welcome!</h1>
+  <h3>Earn royalty points now</h3>
+  <div class="phone-number">
+    <select id="country-code-select">
+      <option value="+65">+65</option>
+      <option value="+60">+60</option>
+      <!-- Add more options for other countries -->
+      <option value="+1">+1</option>
+      <option value="+44">+44</option>
+      <!-- Add more options as needed -->
+    </select>
+    <input type="tel" id="phone-number-input" placeholder="Enter your mobile number">
+  </div>
+  <!-- Modify the button to redirect to the second page -->
+  <button id="check-points-button" onclick="redirectToSecondPage()">Check Royalty Points</button>
+  <script src="mulahpageone.js"></script>
+  <script>
+    function redirectToSecondPage() {
+      const countryCode = document.getElementById('country-code-select').value;
+      const phoneNumber = document.getElementById('phone-number-input').value;
+      // Validate phone number input if needed before redirecting
+
+      // Redirect to the second page with query parameters
+      window.location.href = `mulahsecondpage.html?country=${countryCode}&phone=${phoneNumber}`;
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration - Mulah Loyalty</title>
+  <link rel="stylesheet" href="stylo.css">
+</head>
+<body>
+  <h1 class="logo">MULAH</h1>
+  <h1 class="registration-title">Registration</h1>
+  <p class="italic">Please fill up your details</p>
+  <div class="centered">
+    <form id="registration-form" action="mulahThirdPage.html" method="GET">
+      <div class="form-group">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required>
+      </div><br>
+
+      <div class="form-group">
+        <label>Date of Birth:</label><br>
+        <input type="text" id="day" name="day" placeholder="DD" required maxlength="2" style="width: 50px;">
+        <input type="text" id="month" name="month" placeholder="MM" required maxlength="2" style="width: 50px;">
+        <input type="text" id="year" name="year" placeholder="YYYY" required maxlength="4" style="width: 80px;">
+      </div><br>
+
+      <div class="form-group" id="email-group">
+        <label for="email">Email Address:</label><br>
+        <input type="email" id="email" name="email"><br><br>
+
+        <input type="checkbox" id="no-email" name="no-email">
+        <label for="no-email">No email address</label>
+      </div><br>
+
+      <button type="submit">Continue</button>
+    </form>
+  </div>
+  <script src="mulahpagetwo.js"></script>
+</body>
+</html>
